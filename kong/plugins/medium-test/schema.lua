@@ -38,4 +38,10 @@ return {
       },
     } },
   },
+  entity_checks = {
+    { conditional = {
+      if_field = "config.mark_action", if_match = { ne = "none" },
+      then_field = "config.mark_header", then_match = { required = true },
+    } },
+  },
 }
